@@ -69,3 +69,33 @@ for (let i = 0; i <8; i++) {
 }
 
 console.log(resultado);
+
+//EJERCICIO 5 
+
+console.log("EJERCICIO 5")
+
+//Crear un ciclo que ingresando el un numero me genere la tabla de multiplicar de dicho numero
+
+//Ejercicio utlizando el resultado en 0
+
+let numero = 2;
+let resultado2 = 0;
+
+for (i=0; i<10; i++) {
+    resultado2 = numero + resultado2;
+    console.log(resultado2)
+}
+
+//EJERCICIO 6
+
+console.log("EJERCICIO 6")
+
+//Ejercicio utlizando el i para multiplicar
+
+let numero3 = 4;
+let resultado3 = 1;
+
+for (i=1; i<11; i++) {
+    resultado3 = numero3 * i;
+    console.log(numero3 + " X " + i + " = " + resultado3)
+}
