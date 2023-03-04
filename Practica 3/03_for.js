@@ -99,3 +99,20 @@ for (i=1; i<11; i++) {
     resultado3 = numero3 * i;
     console.log(numero3 + " X " + i + " = " + resultado3)
 }
+
+//EJERCICIO 7 
+
+console.log("EJERCICIO 6")
+
+let productodescuento = ["Gaseosa", "Vino", "Fernet" ]
+let listacompra = ["Tomate", "Aceite", "Leche", "Galletas", productodescuento, "Gaseosa"]
+
+let descefectivo = "Consultar descuento por x producto";
+let cargotarjeta = 1.17;
+
+for (i=0; i<listacompra.length; i ++) {
+    if (listacompra[i] == "Gaseosa") {
+        console.log(descefectivo)
+    } 
+    
+}
