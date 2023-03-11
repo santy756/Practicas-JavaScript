@@ -1,0 +1,125 @@
+function sumar(suma) {
+    
+    for (let index = 0; index < suma.length; index++) {
+        rtasuma += suma[index];
+        
+    }
+    return
+} 
+let rtasuma = 0;
+    switch (opciones) {
+        case 1:
+            let primerValor= alert("Presione aceptar")
+            while (primerValor!=0) {
+                primerValor= prompt("Ingrese un valor o 0 para terminar la operacion")
+                primerValor=Number(primerValor)
+                suma.push(primerValor)
+                sumar(suma)
+            };
+            console.log(sumar(suma));
+        case 2:
+            alert("se eligio el 2")
+            break;
+        case 3:
+            alert("se eligio el 3")
+            break;
+        case 4:
+            alert("se eligio el 4")
+            break;
+        case 5:
+            alert("se eligio el 5")
+            break;
+    
+        default:
+            alert("Elija una de las opciones validas")
+            break;
+    }
+
+
+
+
+
+
+SUMA DE DOS NUMEROS 
+
+while (opciones!=5) {
+    switch (opciones) {
+        case 1:
+            let primerValorSuma= prompt("Ingrese un valor")
+            primerValorSuma=Number(primerValorSuma)
+            suma.push(primerValorSuma)
+            let segundoValorSuma= prompt ("Ingrese el segundo valor")
+            segundoValorSuma=Number(segundoValorSuma)
+            alert(primerValorSuma + segundoValorSuma)
+            opciones = prompt ("Ingrese la operacion que desea realizar \n" +  
+                        "1 - Sumar \n" + 
+                        "2 - Restar \n" + 
+                        "3 - Dividir" + 
+                        "\n 4 - Multiplicar" + 
+                        "\n 5 - Salir ");
+            opciones = Number(opciones);
+            break;
+        case 2:
+            alert("se eligio el 2")
+            break;
+        case 3:
+            alert("se eligio el 3")
+            break;
+        case 4:
+            alert("se eligio el 4")
+            break;
+        case 5:
+            alert("se eligio el 5")
+            break;
+    
+        default:
+            alert("Elija una de las opciones validas")
+            break;
+    }
+}
+    
+
+
+
+
+console.log(suma)
+
+
+
+
+function division(tercerValor) {
+    while (tercerValor!=0) {
+        tercerValor= prompt("Ingrese un valor o 0 para terminar la operacion")
+        tercerValor=Number(tercerValor)
+        rtadivision = rtadivision % tercerValor;
+        rtadivision= Number;
+    };
+}
+
+
+
+function restar(resta1, resta2) {
+    resta1 = prompt("Ingrese el primer valor")
+    resta1 =Number;
+    resta2 = prompt("Ingrese el segundo valor")
+    resta2=Number;
+    let rta = resta1 - resta2;
+    rta=Number;
+    rtaresta = rta;
+    rtaresta = Number;
+}
+
+
+function multiplicar(cuartoValor) {
+    while (cuartoValor!=0) {
+        cuartoValor= prompt("Ingrese un valor o 0 para terminar la operacion")
+        cuartoValor=Number(cuartoValor)
+        rtamultiplicacion *= cuartoValor;
+    };
+}
+
+let resta1 = 0;
+let resta2 = 0;
+let rtaresta = 0;
+
+
