@@ -7,6 +7,7 @@ let opciones = prompt ("Ingrese la operacion que desea realizar \n" +
 
 opciones = Number(opciones);
 
+const mensaje = ("Su resltado es: ")
 
 function seleccion(opciones) {
     opciones = prompt ("Ingrese la operacion que desea realizar \n" +  
@@ -19,71 +20,62 @@ function seleccion(opciones) {
     opciones = Number(opciones);
 }
 
-
-
-function sumar(primerValor) {
-    while (primerValor!=0) {
-        primerValor= prompt("Ingrese un valor o 0 para terminar la operacion")
-        primerValor=Number(primerValor)
-        rtasuma += primerValor;
-    };
-}
-
-function multi(multi1Valor, multi2Valor) {
-    return multi1Valor * multi2Valor;
+function ValoresIngresados() {
+    let valores = [];
+    let primer_valor = prompt("Ingrese primer valor");
+    let segundo_valor = prompt("Ingrese segundo valor");
+    primer_valor=Number(primer_valor);
+    segundo_valor=Number(segundo_valor);
+    valores.push(primer_valor);
+    valores.push(segundo_valor);
+    return valores;
 }
 
 
+function rtaSuma(valoresResultado) {
+    let resultadoSuma = valoresResultado[0] + valoresResultado [1];
+    return resultadoSuma;
+   }
+function rtaResta(valoresResultado) {
+    let resultadoSuma = valoresResultado[0] - valoresResultado [1];
+    return resultadoSuma;
+   }
+function rtaDivision(valoresResultado) {
+    let resultadoSuma = valoresResultado[0] / valoresResultado [1];
+    return resultadoSuma;
+   }
+function rtaMulti(valoresResultado) {
+    let resultadoSuma = valoresResultado[0] * valoresResultado [1];
+    return resultadoSuma;
+   }
 
-let rtasuma = 0;
-
-let multi1Valor = "";
-let multi2Valor = "";
+let valoresResultado = ValoresIngresados();
 
 
 
-
-
-while (opciones!=5) {
     switch (opciones) {
         case 1:
-            let primerValor = alert("Presione Aceptar")
-            sumar(primerValor);
-            alert(rtasuma);
-            seleccion(opciones);
+            alert(mensaje + rtaSuma(valoresResultado))
+            
             break;
         case 2:
-            restar(resta1, resta2);
-            alert(rtaresta);
-            seleccion(opciones)
+            alert(mensaje + rtaResta(valoresResultado))
+            
             break;
         case 3:
-            let tercerValor = prompt("Ingrese un valor 3")
-            tercerValor=Number;
-            division(tercerValor);
-            alert(rtadivision);
-            seleccion(opciones);
+            alert(mensaje + rtaDivision(valoresResultado))
+            
             break;
         case 4:
-            multi1Valor=prompt;
-            multi2Valor=prompt;
-            multi(multi1Valor, multi2Valor)
-            alert (multi(multi1Valor, multi2Valor))
-            seleccion(opciones);
-            break;
+            alert(mensaje + rtaMulti(valoresResultado))
+            break;    
         default:
-            alert("Elija una de las opciones validas")
-            opciones = prompt ("Ingrese la operacion que desea realizar \n" +  
-                        "1 - Sumar \n" + 
-                        "2 - Restar \n" + 
-                        "3 - Dividir \n" + 
-                        "4 - Multiplicar \n" + 
-                        "5 - Salir ");
-            opciones = Number(opciones);
+            alert("Elija una de las opciones validas");
             break;
     }
-}
 
+    
+    
 
 //Ejercicio 2
 
@@ -95,27 +87,51 @@ function credenciales(usuario,contraseña) {
     return usuario + "\n" + contraseña;
 }
 
-console.log(credenciales(usuario,contraseña))
+ console.log(credenciales(usuario,contraseña))
+
+
+//Ejercicio 3
 
 
 
+function potencia() {
 
+    let base = prompt("Ingrese la Base de la potencia")
+    let exponente = prompt("Ingrese el exponente de la potencia")
+    base = Number(base);
+    exponente = Number(exponente);
+
+    let resultado = base;
+
+    for (let index = 1; index < exponente.length; index++) {
+        resultado = resultado*base;
+    }
+    
+    return resultado;
+}
+
+const rta = potencia(resultado);
+alert(rta)
 
 //Ejercicio 4
 
-let cantidadVuelta = 20;
+let cantidadVuelta = prompt("Cantidad de vueltas");
 
-let cantidadASumar = 1;
+let cantidadASumar = prompt("Cantidad a sumar");
 
-let resultado = 0; 
-
-
-for (let index = 0; index < cantidadVuelta; index++) {
-    resultado+= cantidadASumar;
-    console.log(resultado);
+function contador(cantidadASumar, cantidadVuelta) {
+    let resultado1 = 0;
+    for (let index = 1; index < cantidadVuelta; index++) {
+        resultado1+= cantidadASumar;
+        console.log(resultado1);
+    }
+    return resultado1
 }
 
+const rtacontador= contador(cantidadVuelta, cantidadASumar);
 
+//contador(2,10)
+console.log(rtacontador)
     
 
 
